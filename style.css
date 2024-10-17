@@ -1,0 +1,198 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e1e7; /* Soft blush pink */
+    color: #333; /* Dark gray for text */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scroll for navigation */
+}
+
+header {
+    background-color: #d97a7a; /* Deep rose for header background */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8e1e7; /* Light pink on hover */
+}
+
+/* Hero section */
+.hero {
+    background-color: #d97a7a; /* Deep rose for the hero background */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+
+
+   /* Download CV Button Styles */
+.download-cv {
+    display: inline-block;
+    background-color: #d97a7a; /* Deep rose color for the button */
+    color: #fff; /* White text */
+    padding: 12px 24px; /* Adjusted padding for a button-like appearance */
+    border-radius: 8px; /* Rounded corners for a button feel */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s;
+    border: none; /* No border */
+    text-align: center; /* Center the text */
+}
+
+/* Hover effect for the button */
+.download-cv:hover {
+    background-color: #8b5e3c; /* Darker brown for hover effect */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+}
+
+/* Typewriter animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+/* Content section */
+.content-section {
+    margin: 40px;
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-section:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #d97a7a; /* Deep rose for headings */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #d97a7a; /* Focus color for form inputs */
+}
+
+button {
+    background-color: #d97a7a; /* Button background in deep rose */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #b86262; /* Darker shade of deep rose for hover */
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d97a7a; /* Deep rose for the footer background */
+    color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        display: block;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .content-section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        font-size: 1em;
+    }
+}
